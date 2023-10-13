@@ -4,321 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code With me</title>
+    <title>Forms - User data Collection</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <center>
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        Home
-                    </li>
-                    <li>
-                        Menu
-                    </li>
-                    <li>
-                        About Us
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    </center>
-
-    <div class="codePS">
-
-        <h1>C programming</h1>
-
-        <dl>
-            <dt>
-                Problem 1
-            </dt>
-            <dd>
-                Write a program to print the points inside a circle at desire quadrant
-            </dd>
-        </dl>
-
-        <h2>
-            Solution
-        </h2>
-
-        <pre>
-            <code>
-#include <stdio.h>
-#include <conio.h>
-int main()
-{
-    int q, x = 0, y = 0, r;
-    printf("\nEnter the radius: ");
-    scanf("%d", &r);
-    printf("\nEnter the Quadrant number: ");
-    scanf("%d", &q);
-
-    switch (q)
-    {
-    case 1:
-        while (x <= r)
-        {
-            while (y <= r)
-            {
-                if ((x * x) + (y * y) <= (r * r)){
-                    printf("\n(%d,%d)", x, y);
-                }
-                
-                y++;
-            }
-            x++;
-            y = 0;
-        }
-        break;
-    case 2:
-        while (x >= -r)
-        {
-            while (y <= r)
-            {
-                if ((x * x) + (y * y) <= (r * r)){
-                    printf("\n(%d,%d)", x, y);
-                }
-                y++;
-            }
-            x--;
-            y = 0;
-        }
-        break;
-    case 3:
-        while (x >= -r)
-        {
-            while (y >= -r)
-            {
-                if ((x * x) + (y * y) <= (r * r)){
-                    printf("\n(%d,%d)", x, y);
-                }
-                y--;
-            }
-            x--;
-            y = 0;
-        }
-        break;
-    case 4:
-        while (x <= r)
-        {
-            while (y >= -r)
-            {
-                if ((x * x) + (y * y) <= (r * r)){
-                    printf("\n(%d,%d)", x, y);
-                }
-                y--;
-            }
-            x++;
-            y = 0;
-        }
-        break;
-
-    default:
-        break;
-    }
-
-    return 0;
-}             
-    
-    </code>
-</pre>
-    </div>
-    <div class="codePS">
-        <h1>C programming</h1>
-        <dl>
-            <dt>
-                Problem 2
-            </dt>
-            <dd>
-                Write a program to print the points inside a circle at desire quadrant
-                centred at origin
-            </dd>
-        </dl>
-        <h2>
-            Solution
-        </h2>
-        <pre>
-        <code>
-#include <stdio.h>
-#include <conio.h>
-int main()
-{
-    int q, x = 0, y = 0, r;
-    printf("\nEnter the radius: ");
-    scanf("%d", &r);
-    printf("\nEnter the Quadrant number: ");
-    scanf("%d", &q);
-
-    switch (q)
-    {
-    case 1:
-        while (x <= r)
-        {
-            while (y <= r)
-            {
-                if ((x * x) + (y * y) <= (r * r)){
-                    printf("\n(%d,%d)", x, y);
-                }
-                
-                y++;
-            }
-            x++;
-            y = 0;
-        }
-        break;
-    case 2:
-        while (x >= -r)
-        {
-            while (y <= r)
-            {
-                if ((x * x) + (y * y) <= (r * r)){
-                    printf("\n(%d,%d)", x, y);
-                }
-                y++;
-            }
-            x--;
-            y = 0;
-        }
-        break;
-    case 3:
-        while (x >= -r)
-        {
-            while (y >= -r)
-            {
-                if ((x * x) + (y * y) <= (r * r)){
-                    printf("\n(%d,%d)", x, y);
-                }
-                y--;
-            }
-            x--;
-            y = 0;
-        }
-        break;
-    case 4:
-        while (x <= r)
-        {
-            while (y >= -r)
-            {
-                if ((x * x) + (y * y) <= (r * r)){
-                    printf("\n(%d,%d)", x, y);
-                }
-                y--;
-            }
-            x++;
-            y = 0;
-        }
-        break;
-
-    default:
-        break;
-    }
-
-    return 0;
-}             
-    
-    </code>
-</pre>
-    </div>
-    <div class="codePS">
-        <h1>C programming</h1>
-        <dl>
-            <dt>
-                Problem 2
-            </dt>
-            <dd>
-                Write a program to print the points inside a circle at desire quadrant
-                centred at origin
-            </dd>
-        </dl>
-        <h2>
-            Solution
-        </h2>
-        <pre>
-        <code>
-#include <stdio.h>
-#include <conio.h>
-int main()
-{
-    int q, x = 0, y = 0, r;
-    printf("\nEnter the radius: ");
-    scanf("%d", &r);
-    printf("\nEnter the Quadrant number: ");
-    scanf("%d", &q);
-
-    switch (q)
-    {
-    case 1:
-        while (x <= r)
-        {
-            while (y <= r)
-            {
-                if ((x * x) + (y * y) <= (r * r)){
-                    printf("\n(%d,%d)", x, y);
-                }
-                
-                y++;
-            }
-            x++;
-            y = 0;
-        }
-        break;
-    case 2:
-        while (x >= -r)
-        {
-            while (y <= r)
-            {
-                if ((x * x) + (y * y) <= (r * r)){
-                    printf("\n(%d,%d)", x, y);
-                }
-                y++;
-            }
-            x--;
-            y = 0;
-        }
-        break;
-    case 3:
-        while (x >= -r)
-        {
-            while (y >= -r)
-            {
-                if ((x * x) + (y * y) <= (r * r)){
-                    printf("\n(%d,%d)", x, y);
-                }
-                y--;
-            }
-            x--;
-            y = 0;
-        }
-        break;
-    case 4:
-        while (x <= r)
-        {
-            while (y >= -r)
-            {
-                if ((x * x) + (y * y) <= (r * r)){
-                    printf("\n(%d,%d)", x, y);
-                }
-                y--;
-            }
-            x++;
-            y = 0;
-        }
-        break;
-
-    default:
-        break;
-    }
-
-    return 0;
-}             
-    
-    </code>
-</pre>
-    </div>
-
+    <h1>Please fill up the details down below</h1>
+    <h4>We like to know about yourself as a part of our new family</h4>
+    <form action="post">
+        <div>
+            <label for="username">Enter your name</label>
+            <input type="text" placeholder="Enter your name" required autofocus>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+        </div>
+        <div>
+            <select name="qualification">
+                <option value="school student">School student</option>
+                <option value="UG student">UG student</option>
+                <option value="PG student">PG student</option>
+                <option value="Phd student">Phd student</option>
+                <option value="Working">Working</option>
+                <option value="House wife">House wife</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+        <div>
+            <label for="address">Enter your address bellow(with pincode)</label>
+            <br>
+            <textarea name="address" id="address" cols="35" rows="5" placeholder="Enter your full address with pincode"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="accepts">
+            <label for="accepts">I accepts all the terms and conditions</label>
+        </div>
+    </form>
 </body>
 
 </html>
